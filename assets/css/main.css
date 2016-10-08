@@ -80,6 +80,7 @@ html,body{
 
 .contact form{
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 input[type=text] {
@@ -87,7 +88,7 @@ input[type=text] {
   background: #E0F2F1;
   border-radius: 1px;
   width: 400px;
-  height: 22px;
+  height: 20px;
 }
 
 input[type=submit] {
