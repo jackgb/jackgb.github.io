@@ -6,8 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Jacek Glab." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway|Roboto|Source+Sans+Pro|Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -20,61 +19,62 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="navigation">
+            <div class="col-md-12">
                 <!-- Nawigacja -->
-                <b>
-                <a href="index.html">ABOUT</a>
-                <a href="index.html">SHOWCASE</a>
-                <a href="index.html">CONTACT</a>
-              </b>
+                <div class="navigation">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <a href="#about" class="smoothScroll">about</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#showcase" class="smoothScroll">showcase</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#contact" class="smoothScroll">contact</a>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
             </div>
-            <div class="lid">
-                <!-- Lid -->
+            <!-- O mnie -->
+            <div class="about">
+                <a name="about" id="smoothScroll"></a>
                 <p>
                     Hi<br><br>
                     <img class="img-circle" src="assets/images/avatar.jpg">
                     <br><br> I'm <b>Jacek</b><br> I'm student of Wrocław University of Technology and employee of IBM.<br> I love jazz, cold cafee and old movies.<br> Also I'm creating some <b>C++</b> and <b>WebDev</b> projects.
                 </p>
             </div>
-            <div class="slider" onclick="interactR()">
-                <img class="slide" src="assets/images/slide1.jpg" />
+            <!-- Portfolio -->
+            <div class="showcase">
+                <a name="showcase" id="smoothScroll">
             </div>
+            <!-- Kontakt -->
             <div class="contact">
-                <div class="col-md-6">
-                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                        <div class="contact-name">
-                            <label for="name">Name:</label><br>
-                            <input id="name" class="input" name="name" type="text" value=""/><br />
-                        </div>
-                        <div class="contact-email">
-                            <label for="email">Email:</label><br>
-                            <input id="email" class="input" name="email" type="text" value=""/><br />
-                        </div>
-                        <div class="contact-message">
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" class="input" name="message"></textarea><br />
-                        </div>
-                        <input id="submit_button" type="submit" value="SEND" />
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <p>
-                        <!--duo -->
-                    </p>
-                </div>
+                <a name="contact" id="smoothScroll">
+                  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                      <div class="contact-name">
+                          <label for="name">Name:</label><br>
+                          <input id="name" class="input" name="name" type="text" value=""/><br />
+                      </div>
+                      <div class="contact-email">
+                          <label for="email">Email:</label><br>
+                          <input id="email" class="input" name="email" type="text" value=""/><br />
+                      </div>
+                      <div class="contact-message">
+                          <label for="message">Message:</label><br>
+                          <textarea id="message" class="input" name="message"></textarea><br />
+                      </div>
+                      <input id="submit_button" type="submit" value="SEND" />
+                  </form>
             </div>
             <div class="footer">
-              <div class="line"></div>
-              <div class="to-the-top">
-                <a href="index.html">TO THE TOP</a>
-              </div>
-              <div class="copyright"><p>
-                  &copy; 2016 Jacek Glab
-              </p></div>
+              &copy; 2016 Jacek Glab
             </div>
         </div>
     </div>
-
+    <!-- Skrypty -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 </body>
 
 </html>
