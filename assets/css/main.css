@@ -1,102 +1,107 @@
-html,body{
-  font-family: 'Source Sans Pro', sans-serif;
-  /*font-family: 'Lato', sans-serif;*/
-  /*font-family: 'Roboto', sans-serif;*/
-  /*font-family: 'Oswald', sans-serif;*/
-  /*font-family: 'Raleway', sans-serif;*/
-  font-size:14px;
-  padding:0;
-  margin: 0;
-  background-color: #F5F5F5;
-  text-decoration: none;
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Oswald', sans-serif;*/
+    /*font-family: 'Raleway', sans-serif;*/
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    background-color: #009688;
+    text-decoration: none;
 }
 
-.navigation{
-  position: fixed;
-  width:100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-size: 1.5vw;
-  text-align: center;
-  background-color: #009688;
-  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12);*/
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: #009688;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12);*/
 }
 
-.navigation a{
-  font-weight: lighter;
-  color:#F5F5F5;
-  text-decoration:none;
-  text-transform:uppercase;
-  cursor:pointer;
-}
-.navigation a:hover{
-  color:#FFF;
-  font-weight:normal;
-  text-decoration:none;
-  cursor:pointer;
+.navigation a {
+    font-weight: lighter;
+    color: #F5F5F5;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.navigation a:active{
-  color:#FFF;
-  text-decoration:none;
-  cursor:pointer;
+.navigation a:hover {
+    color: #FFF;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.about{
-  height: 100vh;
-  background-color: #F5F5F5;
-  padding-top: 10vh;
-  text-align: center;
-  font-size: 1.8vw;
+.navigation a:active {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.about b{
-  color: #009688;
+.about {
+    height: 100vh;
+    background-color: #F5F5F5;
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.about b {
+    color: #009688;
 }
 
 .img-circle {
-  width: 300px;
-	height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.showcase{
-  height: 100vh;
-  background-color: #222222;
+.showcase {
+    width: 100vw;
+    height: 100vh;
+    background: url("http://www.planwallpaper.com/static/images/41-Best-and-Coolest-Collection-HD-Wallpapers-Ever-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.contact{
-  height: 100vh;
-  padding-top: 15vh;
-  padding-left: 35vw;
-  padding-right: 35vw;
-  background-color: #009688;
+.contact {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 15vh;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    background-color: #009688;
 }
 
-.footer{
-  background-color: #009688;
-  height: 4vh;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  font-weight:lighter;
+.contact p:hover {
+    text-decoration: none;
 }
 
-.contact p:hover{
-  text-decoration: none;
+.footer {
+    background-color: #009688;
+    height: 4vh;
+    width: 100vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
 }
-
 
 input[type=text] {
-  border: 1px solid #E0F2F1;
-  background: #E0F2F1;
-  border-radius: 1px;
-  width: 30vw;
-  height: 3.2vh;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: 1px solid #E0F2F1;
+    background: #E0F2F1;
+    border-radius: 1px;
+    width: 30vw;
+    height: 3.2vh;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 input[type=submit] {
@@ -106,7 +111,7 @@ input[type=submit] {
     padding: 10px 20px;
     border-radius: 1px;
     font-weight: 900;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 input[type=submit]:hover {
@@ -115,33 +120,32 @@ input[type=submit]:hover {
 }
 
 input[type=submit]:active {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
-textarea{
-  border: 1px solid #E0F2F1;
-  background: #E0F2F1;
-  border-radius: 1px;
-  width: 30vw;
-  height: 40vh;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-
+textarea {
+    border: 1px solid #E0F2F1;
+    background: #E0F2F1;
+    border-radius: 1px;
+    width: 30vw;
+    height: 40vh;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-input:focus{
-  background: #fff;
-  outline: none;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+input:focus {
+    background: #fff;
+    outline: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
-textarea:focus{
-  background: #fff;
-  outline: none;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+textarea:focus {
+    background: #fff;
+    outline: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
-label{
-  color: #fff;
-  font-weight:lighter;
-  padding: 5px;
+label {
+    color: #fff;
+    font-weight: lighter;
+    padding: 5px;
 }
