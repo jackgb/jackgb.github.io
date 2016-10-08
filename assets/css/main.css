@@ -60,7 +60,7 @@ html,body{
 
 .slider{
   /*height: 593px;*/
-  background-color: #212121;
+  background-color: #00897B;
 }
 
 .slider img{
@@ -71,7 +71,7 @@ html,body{
 }
 
 .contact{
-  height: 350px;
+  height: 320px;
   text-align: center;
   text-align: left;
   background-color: #00897B;
