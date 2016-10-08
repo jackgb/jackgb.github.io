@@ -27,6 +27,7 @@ html,body{
 
 .navigation a{
   color:#E0F2F1;
+  text-decoration:none;
 }
 .navigation a:hover{
   color:#ffffff;
