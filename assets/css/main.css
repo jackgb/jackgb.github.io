@@ -73,7 +73,7 @@ html, body {
 
 .contact {
     height: 100vh;
-    width: 100vw;
+    /*width: 100vw;*/
     padding-top: 15vh;
     padding-left: 35vw;
     padding-right: 35vw;
@@ -87,7 +87,7 @@ html, body {
 .footer {
     background-color: #009688;
     height: 4vh;
-    width: 100vw;
+    /*width: 100vw;*/
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
     text-align: center;
