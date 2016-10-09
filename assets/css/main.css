@@ -33,6 +33,7 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+    opacity: 1.0;
 }
 
 .navigation a:hover {
@@ -40,6 +41,7 @@ html, body {
     font-weight: normal;
     text-decoration: none;
     cursor: pointer;
+    opacity: 1.0;
 }
 
 .navigation a:active {
