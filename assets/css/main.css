@@ -20,6 +20,8 @@ html, body {
     font-size: 1.5vw;
     text-align: center;
     background-color: #009688;
+    z-index:9999;
+    opacity: 0.9;
     /*box-shadow: 0 1px 3px rgba(0,0,0,0.12);*/
 }
 
@@ -69,8 +71,10 @@ html, body {
 }
 
 .showcase a{
+  font-family: 'Raleway', sans-serif;
   color: #E0F2F1;
   font-size: 8vh;
+  font-weight: bolder;
   text-decoration: none;
   cursor: pointer;
 }
@@ -78,9 +82,21 @@ html, body {
 .showcase a:hover{
   color: #FFF;
   font-size: 8vh;
+  font-weight: bolder;
   text-decoration: none;
   coursor: pointer;
+}
 
+mark{
+  color: #FFF;
+  background-color: #009688;
+  opacity: 0.9;
+}
+
+sup{
+  color: #FFF;
+  font-size: 2vw;
+  font-weight: normal;
 }
 
 .contact {
