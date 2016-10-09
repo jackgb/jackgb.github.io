@@ -1,112 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pl" class="no-js">
 <head>
-    <title>jackgb.github.io</title>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Jacek Glab." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway|Roboto|Source+Sans+Pro|Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Aleksandra Frankowska" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--[if lt IE 9]>
-	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	  <![endif]-->
+	<title>Domy szeregowe w Kochcicach</title>
+
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
+<body class="lokalizacja">
+	<header>
+		<a href="index.html">Domy szeregowe w Kochcicach</a>
+	</header>
+	<section id="boxes">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6" style="padding-left: 0px;
+    padding-right: 0px;" onclick="interactL(-1)">
+						<img class="mySlidesL" src="assets/images/s1.jpg" style="width:100%;"/>
+						<img class="mySlidesL" src="assets/images/s2.jpg" style="width:100%;"/>
+						<img class="mySlidesL" src="assets/images/s3.jpg" style="width:100%;"/>
+						<img class="mySlidesL" src="assets/images/s4.jpg" style="width:100%;"/>
+						<img class="mySlidesL" src="assets/images/s5.jpg" style="width:100%;"/>
+						<p id="count1">
+						<span id="c1"></span> &#8260; <span>5</span>
+					</p>
+					</div>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Nawigacja -->
-                <div class="navigation">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-2">
-                        <a href="#about" class="smoothScroll">about</a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="#showcase" class="smoothScroll">showcase</a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="#contact" class="smoothScroll">contact</a>
-                    </div>
-                    <div class="col-md-3"></div>
-                </div>
-            </div>
-            <!-- O mnie -->
-            <a name="about" id="smoothScroll"></a>
-            <div class="about">
-                <p>
-                    Hi<br><br>
-                    <img class="img-circle" src="assets/images/avatar.jpg">
-                    <br><br> I'm <b>Jacek</b><br> I'm student of Wrocław University of Technology and employee of IBM.<br> I love jazz, cold cafee and old movies.<br> Also I'm creating some <b>C++</b> and <b>WebDev</b> projects.
-                </p>
-            </div>
-            <!-- Portfolio -->
-            <a name="showcase" id="smoothScroll"></a>
-            <div class="showcase">
-                <div class="w3-content" style="width-max:100vw;position:relative;" >
-                  <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:40%;left:20px;" onclick="plusDivs(-1)"><</a>
-                  <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:40%;right:20px;" onclick="plusDivs(1)">></a>
-                    <div class="w3-display-container mySlides">
-                        <a href="gopher.html" style="color:#FFF; position:absolute;top:40%; margin-left:20vw; font-family: 'Press Start 2P', cursive; font-size:4vw; text-align:center;"><mark>Project::GOPHER<br></mark><p style="color: #FFF; font-size: 2vw; font-weight: normal; font-family: 'Roboto', sans-serif;">2D side-scrolling shooter game in C++ with SFML, pugixml and Box2D</p></a>
-                        <img src="assets/images/slide1.jpg" style="width:100%">
-                    </div>
+					<div class="col-md-6" style="padding-left: 0px;
+    padding-right: 0px;" onclick="interactR(+1)">
+						<img class="mySlidesR" src="assets/images/1.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/schemat.jpg" style="width:100%;"/>
 
-                    <div class="w3-display-container mySlides">
-                        <a href="testownik.html" style="color:#FFF; position:absolute; top:40%; margin-left:35vw; font-size:4vw; text-align:center; font-family: 'Press Start 2P', cursive;"><mark>Testr<br></mark><p style="color: #FFF; font-size: 2vw; font-weight: normal; font-family: 'Roboto', sans-serif;">Quiz learning manager in Java</p></a>
-                        <img src="assets/images/slide2.jpg" style="width:100%">
-                    </div>
-                </div>
-            </div>
-            <!-- Kontakt -->
-            <a name="contact" id="smoothScroll"></a>
-            <div class="contact">
-                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="contact-name">
-                        <label for="name">Name:</label><br>
-                        <input id="name" class="input" name="name" type="text" value="" /><br />
-                    </div>
-                    <div class="contact-email">
-                        <label for="email">Email:</label><br>
-                        <input id="email" class="input" name="email" type="text" value="" /><br />
-                    </div>
-                    <div class="contact-message">
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" class="input" name="message"></textarea><br />
-                    </div>
-                    <input id="submit_button" type="submit" value="SEND" />
-                </form>
-            </div>
-            <div class="footer">
-                &copy; 2016 Jacek Glab
-            </div>
-        </div>
-    </div>
-    <!-- Skrypty -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-    <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+						<img class="mySlidesR" src="assets/images/a1.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/a2.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/a3.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/a5.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/a4.jpg" style="width:100%;"/>
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+						<img class="mySlidesR" src="assets/images/b1.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/b2.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/b3.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/b5.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/b4.jpg" style="width:100%;"/>
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
+						<img class="mySlidesR" src="assets/images/c1.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/c2.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/c3.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/c5.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/c4.jpg" style="width:100%;"/>
+
+						<img class="mySlidesR" src="assets/images/d1.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/d2.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/d3.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/d5.jpg" style="width:100%;"/>
+						<img class="mySlidesR" src="assets/images/d4.jpg" style="width:100%;"/>
+						<p id="count2">
+						<span id="c2"></span> &#8260; <span>6</span>
+					</p>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
 </body>
-
+	<footer>
+		<ul>
+			<li><a href="opis.html">Opis</a></li>
+			<li><a href="lokalizacja.html">Lokalizacja</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</footer>
+			<!-- BEGIN SKRYPTY -->
+			<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="assets/js/slideshow.js"></script>
+			<!-- END SKRYPTY -->
+	</body>
 </html>

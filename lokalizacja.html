@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Domy szeregowe w Kochcicach</title>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+		    <link rel="stylesheet" href='assets/css/main.css' type='text/css' media='all' />
+		    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <!--[if lt IE 9]>
+	         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      	<![endif]-->
+    </head>
+    <body class="lokalizacja">
+		<header>
+			<a href="index.html">Domy szeregowe w Kochcicach</a>
+		</header>
+    <main onload="mapaStart()">
+    <div class="container">
+		<div class="row">
+      <div class="col-md-12" id="map"></div>
+    </div>
+  </div>
+  </main>
+  <footer>
+		<ul>
+			<li><a href="opis.html">Opis</a></li>
+			<li><a href="lokalizacja.html" class="act">Lokalizacja</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</footer>
+    <script>
+     function initMap() {
+       var uluru = {lat: 50.710554, lng: 18.680898};
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 15,
+         center: uluru,
+         styles:[{"featureType":"all","elementType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}]
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+     }
+   </script>
+		<!-- BEGIN SKRYPTY -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjMtohWU9fEoB_WCOUi8Y88CTHA7mAX3E&callback=initMap">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- END SKRYPTY -->
+  </body>
+</html>
