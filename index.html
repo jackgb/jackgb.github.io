@@ -47,6 +47,20 @@
             <!-- Portfolio -->
             <div class="showcase">
                 <a name="showcase" id="smoothScroll"></a>
+                <div class="w3-content" style="width-max:100vw;position:relative">
+                    <div class="w3-display-container mySlides">
+                        <img src="assets/images/slide1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="assets/images/slide2.jpg" style="width:100%">
+                    </div>
+
+                    <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:20px" onclick="plusDivs(-1)"><</a>
+                    <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:20px" onclick="plusDivs(1)">></a>
+
+                </div>
+
             </div>
             <!-- Kontakt -->
             <div class="contact">
@@ -75,6 +89,25 @@
     <!-- Skrypty -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 </body>
 
 </html>
