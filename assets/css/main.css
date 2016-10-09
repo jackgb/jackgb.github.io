@@ -7,7 +7,7 @@ html, body {
     font-size: 14px;
     padding: 0;
     margin: 0;
-    background-color: #009688;
+    background-color: #FFF;
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ html, body {
 }
 
 .showcase {
-    width: 100vw;
+    /*width: 100vw;*/
     height: 100vh;
     background: url("http://www.planwallpaper.com/static/images/41-Best-and-Coolest-Collection-HD-Wallpapers-Ever-1.jpg");
     background-size: cover;
