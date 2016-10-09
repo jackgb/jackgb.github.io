@@ -81,6 +81,7 @@ footer ul li .act{
 /*slidery*/
 .container{
   padding:0;
+  width:100%;
 }
 #boxes{
   position: absolute;
@@ -170,7 +171,7 @@ footer ul li .act{
 .header_opis{
   position:fixed;
   text-align:center;
-  padding-left:16px;
+  padding-left:17px;
   width:100%;
   background-color: #FFF;
   height:100px;
@@ -206,11 +207,20 @@ footer ul li .act{
   .container{
     padding:0;
   }
+  .mySlidesR img{
+    height:320px;
+  }
+  .mySlidesL img{
+    height:320px;
+  }
   .mySlidesR{
-    margin-left:0;
+    margin-left:5px;
   }
   .mySlidesL{
-    margin-right: 0;
+    margin-right:5px;
+  }
+  .container{
+    width:100%;
   }
   .row{
     margin-left:0px;
@@ -223,6 +233,9 @@ footer ul li .act{
     width:75%;
     height:400px;
   }
+  #count2{
+    margin:14px -4px 0;
+  }
 }
 @media (min-width:1199px){
   .mySlidesR img{
@@ -232,27 +245,24 @@ footer ul li .act{
     height:427px;
   }
   .mySlidesR{
-    margin-left:20px;
+    padding-left:30px;
   }
   .mySlidesL{
-    margin-right:20px;
+    padding-right:30px;
   }
   #count2{
-    margin:14px -18px 0;
-  }
-  #venue .container .items{
-    margin:-140px 0 0 0;
+    margin:14px -6px 0;
   }
   .container{
     width:75%;
-    height:427px;
   }
   .boxes{
     width:1060px;
-    height:409px;
   }
   .col-md-6{
     width:50%;
+    padding-left:0;
+    padding-right:0;
   }
   .row{
     margin-left:50px;
@@ -261,18 +271,24 @@ footer ul li .act{
   }
   #map{
     width:75%;
-    height:370px;
+    height:400px;
   }
 }
 @media (min-width:2511px){
   .mySlidesR img{
     height:827px;
   }
+  .mySlidesL{
+    padding-right: 54px;
+  }
+  .mySlidesR{
+    padding-left: 54px;
+  }
   .mySlidesL img{
     height:827px;
   }
   #venue .container .items{
-    margin:137px 0 0;
+    margin:69px 0 0;
   }
   .container{
     width:100%;
@@ -284,6 +300,8 @@ footer ul li .act{
   }
   .col-md-6{
     width:50%;
+    padding-left:0;
+    padding-right:0;
   }
   .row{
     margin-left:214px;
