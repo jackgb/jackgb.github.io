@@ -3,16 +3,19 @@ html,body{
   /*
   font-family: 'Open Sans', sans-serif;*/
   font-size:100%;
-  overflow: auto;
-  overflow: initial;
-}
-p{
-  margin:0;
 }
 .mail{
   color:#111111;
 }
 .mail:hover{
+  text-decoration: none;
+  color:#111111;
+}
+.mail:visited{
+  text-decoration: none;
+  color:#111111;
+}
+.mail:active{
   text-decoration: none;
   color:#111111;
 }
@@ -146,11 +149,10 @@ footer ul li .act{
    -webkit-transform:translate(-50%, -50%);
    height:586px;
  }
-
 /*opis*/
-.text{
+.opis{
   margin:0 auto;
-  width:506px;
+  width:50%;
   font-size:14px;
   padding:100px 0 100px;
 }
@@ -163,20 +165,17 @@ footer ul li .act{
   bottom:0;
   right:0; left:0;
   margin:0;
-  padding:40px 0 26px;
-
+  padding:40px 0 26px 18px;
 }
 .header_opis{
   position:fixed;
   text-align:center;
+  padding-left:16px;
   width:100%;
   background-color: #FFF;
   height:100px;
   font-size:14px;
   margin:0 auto;
-  padding:0;
-  z-index: 99;
-
 }
 .header_opis a{
   margin:40px 0;
@@ -196,7 +195,7 @@ footer ul li .act{
   padding:0;
 }
 #venue .container .items {
-  margin:0 0 90px;
+  margin:0 0 40px 0;
 }
 .row{
   margin-left:0px;
@@ -205,19 +204,24 @@ footer ul li .act{
 }
 @media (min-width:992px){
   .container{
-    width:1012px;
     padding:0;
+  }
+  .mySlidesR{
+    margin-left:0;
+  }
+  .mySlidesL{
+    margin-right: 0;
   }
   .row{
     margin-left:0px;
     margin-right:0px;
   }
   #venue .container .items{
-    margin:70px 0;
+    margin:0 0 85px 0px;
   }
   #map{
-    width:1065px;
-    height:550px;
+    width:75%;
+    height:400px;
   }
 }
 @media (min-width:1199px){
@@ -227,31 +231,37 @@ footer ul li .act{
   .mySlidesL img{
     height:427px;
   }
+  .mySlidesR{
+    margin-left:20px;
+  }
+  .mySlidesL{
+    margin-right:20px;
+  }
   #count2{
-    margin:14px -54px 0;
+    margin:14px -18px 0;
   }
   #venue .container .items{
-    margin:-170px 0 0;
+    margin:-140px 0 0 0;
   }
   .container{
-    width:100%;
+    width:75%;
     height:427px;
   }
   .boxes{
-    width:2132px;
-    height:427px;
+    width:1060px;
+    height:409px;
   }
   .col-md-6{
     width:50%;
   }
   .row{
-    margin-left:150px;
-    margin-right:150px;
+    margin-left:50px;
+    margin-right:50px;
     height:427px;
   }
   #map{
     width:75%;
-    height:427px;
+    height:370px;
   }
 }
 @media (min-width:2511px){
@@ -262,7 +272,7 @@ footer ul li .act{
     height:827px;
   }
   #venue .container .items{
-    margin:175px 0 0;
+    margin:137px 0 0;
   }
   .container{
     width:100%;
@@ -285,8 +295,8 @@ footer ul li .act{
     height:827px;
   }
 }
-#venue {
-  margin: 0 auto;
+#venue{
+  margin:0 auto;
   position: absolute;
   width:100%;
   display:block;
@@ -294,7 +304,7 @@ footer ul li .act{
   font-size:14px;
 }
 #venue .container {
-  max-width: 700px;
+  max-width:700px;
   position: relative;
 }
 
@@ -311,27 +321,18 @@ footer ul li .act{
   -ms-align-items: flex-start;
 }
 #venue .container .items .flex .media {
-  margin: 50px 55px 0;
-  width: 50%;
+  margin:50px 55px 0;
+  width:50%;
 }
 #venue .container .items .flex .media .person:first-child {
-  padding: 0 0 10px;
+  padding:0 0 10px;
 }
 #venue .container .items .flex .when {
-  width: 50%;
-  position: relative;
-  margin: 50px 55px 20px;
+  width:50%;
+  position:relative;
+  margin:50px 55px 20px;
   text-align:right;
 }
 #venue .container .items .flex .when p:first-child {
-  padding: 0 0 190px;
-}
-
-main{
-  position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
+  padding:0 0 190px;
 }
