@@ -137,6 +137,7 @@ footer ul li .act{
   /*
   font-family: 'Open Sans', sans-serif;*/
   font-size:14px;
+  overflow-y: scroll;
 }
  #map{
    width:1509px;
@@ -167,12 +168,12 @@ footer ul li .act{
   bottom:0;
   right:0; left:0;
   margin:0;
-  padding:40px 0 26px 17px;
+  padding:40px 0 26px 0px;
 }
 .header_opis{
   position:fixed;
   text-align:center;
-  padding-left:16px;
+  /*padding-left:16px;*/
   width:100%;
   background-color: #FFF;
   height:100px;
