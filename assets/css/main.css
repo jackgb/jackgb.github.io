@@ -166,12 +166,12 @@ footer ul li .act{
   bottom:0;
   right:0; left:0;
   margin:0;
-  padding:40px 0 26px 15px;
+  padding:40px 0 26px 17px;
 }
 .header_opis{
   position:fixed;
   text-align:center;
-  padding-left:15px;
+  padding-left:17px;
   width:100%;
   background-color: #FFF;
   height:100px;
@@ -238,6 +238,12 @@ footer ul li .act{
   }
 }
 @media (min-width:1199px){
+  .header_opis{
+    padding-left:0;
+  }
+  .nav_opis{
+    padding-left: 0;
+  }
   .mySlidesR img{
     height:427px;
   }
@@ -275,6 +281,12 @@ footer ul li .act{
   }
 }
 @media (min-width:2511px){
+  .header_opis{
+    padding-left:0;
+  }
+  .nav_opis{
+    padding-left: 0;
+  }
   .mySlidesR img{
     height:827px;
   }
@@ -288,7 +300,7 @@ footer ul li .act{
     height:827px;
   }
   #venue .container .items{
-    margin:69px 0 0;
+    margin:37px 0 0;
   }
   .container{
     width:100%;
