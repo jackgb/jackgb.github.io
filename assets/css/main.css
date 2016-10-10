@@ -3,7 +3,7 @@ html,body{
   /*
   font-family: 'Open Sans', sans-serif;*/
   font-size:100%;
-  overflow-x:hidden; /*Oleuku, dopisalem to dla testow, na chrome slider cos robi i uruchamia dolny scrollbar*/
+  overflow:hidden; /*Oleuku, dopisalem to dla testow, na chrome slider cos robi i uruchamia dolny scrollbar*/
 }
 .mail{
   color:#111111;
