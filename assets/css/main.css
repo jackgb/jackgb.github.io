@@ -6,7 +6,7 @@ html,body{
   overflow: hidden;
 }
 .main_opis{
-  height: 80vh;
+  height: 85vh;
 }
 .mail{
   color:#111111;
@@ -228,7 +228,7 @@ footer ul li .act{
     height:40px;
   }
   .opis{
-    padding:40px 0 80px;
+    padding:40px 0 20px;
     font-size:10px;
     width:75%;
   }
@@ -264,7 +264,7 @@ footer ul li .act{
     padding:0 0 172px;
   }
   #venue .container .items{
-    margin:0px 5px 10px 10px;
+    margin:0px 5px 37px 10px;
   }
   #boxes .col-md-6 {
     text-align:center;
@@ -300,7 +300,7 @@ footer ul li .act{
     height:40px;
   }
   .opis{
-    padding:40px 0 80px;
+    padding:40px 0 20px;
     font-size:10px;
   }
   .header_opis a{
