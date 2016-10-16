@@ -3,6 +3,10 @@ html,body{
   /*
   font-family: 'Open Sans', sans-serif;*/
   font-size:100%;
+  overflow: hidden;
+}
+.main_opis{
+  height: 80vh;
 }
 .mail{
   color:#111111;
@@ -146,11 +150,11 @@ footer ul li .act{
  }
 /*opis*/
 .opis{
-  overflow: auto;
+  overflow: hidden;
   margin:0 auto;
   width:50%;
   font-size:14px;
-  padding:100px 0 100px;
+  padding:0 0 100px;
 }
 .nav_opis{
   position:fixed;
@@ -216,7 +220,6 @@ footer ul li .act{
 #venue .container .items .flex .when p:first-child {
   padding:0 0 190px;
 }
-/*kontakt css*/
 @media (max-width:440px) {
   .mySlidesR{
     margin-left:0;
@@ -523,4 +526,5 @@ footer ul li .act{
     width:2132px;
     height:827px;
   }
+
 }

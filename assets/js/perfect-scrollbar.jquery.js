@@ -880,4 +880,4 @@
 // ------------------------------ end default code
 
 // initialization in html-page
-$('main').perfectScrollbar();
+$('.main_opis').perfectScrollbar();
