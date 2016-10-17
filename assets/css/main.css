@@ -157,7 +157,7 @@ footer ul li .act{
   margin:0 auto;
   width:50%;
   font-size:14px;
-  padding:100px 0 100px;
+  padding:100px 0 0;
 }
 .nav_opis{
   position:fixed;
@@ -492,7 +492,7 @@ footer ul li .act{
 @media (min-width:2511px){
   .header_opis{
     padding-left:0;
-    height:255px;
+    height:100px;
   }
   .nav_opis{
     padding-left:0;
@@ -535,6 +535,6 @@ footer ul li .act{
     height:817px;
   }
   .opis{
-    padding:255px 0 50px;
+    padding:110px 0 50px;
   }
 }
