@@ -535,6 +535,9 @@ and (orientation : landscape){
   }
 }
 @media (min-width:1979px){
+  .container{
+    width:85%;
+  }
   #map{
     width:1850px;
     height:745px;
