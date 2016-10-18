@@ -478,8 +478,8 @@ and (orientation : landscape){
     margin:0 0 85px 0px;
   }
   #map{
-    width:75%;
-    height:400px;
+    width:940px;
+    height:375px;
   }
    .mySlidesR{
     margin-left:25px;
