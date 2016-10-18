@@ -534,7 +534,7 @@ and (orientation : landscape){
     margin:0 0 200px;
   }
 }
-@media (min-width:1979px){
+@media (min-width:1919px){
   .container{
     width:85%;
   }
