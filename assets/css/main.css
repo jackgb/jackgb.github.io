@@ -527,8 +527,8 @@ and (orientation : landscape){
     width:85%;
   }
   #map{
-    width:1550px;
-    height:670px;
+    width:1272px;
+    height:495px;
   }
   #venue .container .items{
     margin:0 0 200px;
