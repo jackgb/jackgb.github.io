@@ -267,7 +267,7 @@ footer ul li .act{
     padding:0 0 145px;
   }
   #venue .container .items{
-    margin:0px 5px 110px 10px;
+    margin:0px 5px 76px 10px;
   }
   #boxes .col-md-6 {
     text-align:center;
@@ -304,10 +304,10 @@ footer ul li .act{
   }
   .opis{
     padding:80px 0 40px;
-    font-size:12px;
+    font-size:10px;
   }
   .header_opis a{
-    font-size:12px;
+    font-size:10px;
     margin:20px 0 0;
   }
   .head_lok{
@@ -320,7 +320,7 @@ footer ul li .act{
     margin:15px 0 0;
   }
   header a{
-    font-size:12px;
+    font-size:10px;
   }
   footer ul li a{
     font-size:10px;
@@ -364,6 +364,39 @@ footer ul li .act{
     padding:0 0 164px;
   }
 }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px)
+and (orientation : landscape){
+  .container{
+    padding-left: 0;
+  }
+  .nav_opis{
+    width:100%;
+  }
+  .header_opis{
+    width:100%;
+  }
+  #boxes{
+    margin:0;
+  }
+  #map{
+    height:225px;
+  }
+  .opis{
+    width:75%;
+    font-size:
+  }
+  #venue .container .items{
+    margin:0 0 8px;
+  }
+  #venue .container{
+    font-size:9px;
+  }
+  #venue .container .items .flex .when p:first-child{
+    padding:0 0 126px;
+  }
+}
 @media (min-width: 767px) and (max-width: 991px){
   footer{
     position:absolute;
@@ -401,23 +434,23 @@ footer ul li .act{
     margin:-30px 0 0;
   }
   #boxes .col-md-6 {
-    width:320px;
-    height:200px;
+    width:355px;
+    height:215px;
     margin:0 auto;
-    padding-left:0;
-    padding-right: 0;
+    padding-left:10px;
+    padding-right: 10px;
     display:inline-block;
   }
 #venue .container .items {
-  margin:0 0 40px 0;
+  margin:0 0 100px 0;
 }
 .row{
   margin-left:0px;
   margin-right:0px;
   }
   #map{
-    height:261px;
-    width:697px;
+    height:273px;
+    width:720px;
   }
 }
 @media (min-width: 992px) and (max-width: 1198px){
@@ -482,11 +515,32 @@ footer ul li .act{
     height:427px;
   }
   #map{
-    width:75%;
+    width:1040px;
     height:400px;
   }
   #venue .container .items{
     margin:0 0 100px;
+  }
+}
+@media (min-width:1649px){
+  .container{
+    width:100%;
+  }
+  #map{
+    width:1790px;
+    height:706px;
+  }
+  #venue .container .items{
+    margin:0 0 200px;
+  }
+}
+@media (min-width:1979px){
+  #map{
+    width:1850px;
+    height:745px;
+  }
+  #venue .container .items{
+    margin:0 0 154px;
   }
 }
 @media (min-width:2511px){
