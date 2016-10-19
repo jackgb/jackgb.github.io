@@ -6,7 +6,7 @@ html,body{
   overflow: hidden;
 }
 .main_opis{
-  height:90vh;
+  height:85vh;
 }
 .mail{
   color:#111111;
@@ -458,7 +458,7 @@ and (orientation : landscape){
     float:left;
   }
   .opis{
-    padding:98px 0 80px;
+    padding:80px 0 80px;
   }
   #count2{
     margin:14px -25px 0;
@@ -524,7 +524,7 @@ and (orientation : landscape){
 }
 @media (min-width:1649px){
   .container{
-    width:85%;
+    width:100%;
   }
   #map{
     width:1298px;
@@ -534,10 +534,7 @@ and (orientation : landscape){
     margin:0 0 200px;
   }
 }
-@media (min-width:1919px){
-  .container{
-    width:85%;
-  }
+@media (min-width:1979px){
   #map{
     width:1502px;
     height:589px;
@@ -556,13 +553,13 @@ and (orientation : landscape){
   }
   .mySlidesR img{
     height:827px;
-  }
+  }/*
   .mySlidesL{
     padding-right: 54px;
   }
   .mySlidesR{
     padding-left: 54px;
-  }
+  }*/
   .mySlidesL img{
     height:827px;
   }
@@ -579,8 +576,8 @@ and (orientation : landscape){
   }
   .col-md-6{
     width:50%;
-    padding-left:0;
-    padding-right:0;
+    padding-left:54px;
+    padding-right:54px;
   }
   .row{
     margin-left:214px;
